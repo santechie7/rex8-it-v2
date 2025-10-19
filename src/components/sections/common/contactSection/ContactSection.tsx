@@ -60,14 +60,15 @@ const ContactSection: React.FC<ContactSectionProps> = ({
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-     if (!ACCESS_KEY) {
+    if (!ACCESS_KEY) {
       console.error("Missing ACCESS_KEY");
       return;
     }
     const formData = new FormData(e.target as HTMLFormElement);
-formData.append("access_key", ACCESS_KEY);
-    const values = Object.fromEntries(formData.entries());
-    console.log(values);
+    formData.append("access_key", ACCESS_KEY);
+    const firstName = formData.get("firstName") || "Someone";
+    formData.append("subject", `${firstName} sent a message from REX EIGHT IT`);
+    // const values = Object.fromEntries(formData.entries());
     setIsLoading(true);
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
