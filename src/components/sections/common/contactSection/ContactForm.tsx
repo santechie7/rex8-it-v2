@@ -43,7 +43,7 @@ export interface ContactFormProps {
   formState: ContactFormState;
   handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-  contactFormContent:any;
+  contactFormContent:ContactFormContent;
 }
 
 interface CommonSelectProps {

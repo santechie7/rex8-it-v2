@@ -13,7 +13,7 @@ interface InfoCard {
 
 interface ContactSectionProps {
   contactCards: InfoCard[];
-  contactFormContent: any;
+  contactFormContent: ContactFormContent;
 }
 
 export const contactSection = {
