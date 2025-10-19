@@ -29,6 +29,7 @@ interface ServicesSectionProps {
 
 export const servicesSection = {
   section: "bg-white container mx-auto px-[4%] py-24",
+  serviceDetail: "mb-[120px] scroll-mt-[100px]",
   header: "text-center max-w-[900px] mx-auto space-y-4",
   number: "text-sm text-secondary font-semibold uppercase tracking-[2px]",
   title: "text-4xl font-bold text-primary leading-tight",
@@ -55,14 +56,15 @@ export const servicesSection = {
 
   useCasesSection: "use-cases-section bg-white p-6 rounded-lg border-2 border-dashed border-border mt-6",
   useCasesTitle: "text-xl font-semibold mb-3",
-  useCasesList: "list-disc pl-6 space-y-2 text-gray-700",
+  useCasesList: "list-none pl-6 grid md:grid-cols-2  space-y-2 text-gray-700",
+  useCasesItem: "relative pl-7 text-text text-[0.95rem] leading-[1.6] before:content-['→'] before:absolute before:left-0 before:text-secondary before:font-bold before:text-[1.2rem]"
 };
 
 
 const ServicesSection: React.FC<ServicesSectionProps> = ({ services }) => (
   <section className={servicesSection.section}>
     {services.map((service) => (
-      <div key={service.id} id={service.id} className="service-detail">
+      <div key={service.id} id={service.id} className={servicesSection.serviceDetail}>
         {/* Header */}
         <div className={servicesSection.header}>
           <div className={servicesSection.number}>{service.number}</div>
@@ -111,7 +113,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ services }) => (
           <h4 className={servicesSection.useCasesTitle}>Common Use Cases</h4>
           <ul className={servicesSection.useCasesList}>
             {service.useCases.map((useCase, i) => (
-              <li key={i}>{useCase}</li>
+              <li className={servicesSection.useCasesItem} key={i}>{useCase}</li>
             ))}
           </ul>
         </div>

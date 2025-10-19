@@ -60,8 +60,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+     if (!ACCESS_KEY) {
+      console.error("Missing ACCESS_KEY");
+      return;
+    }
     const formData = new FormData(e.target as HTMLFormElement);
-
+formData.append("access_key", ACCESS_KEY);
     const values = Object.fromEntries(formData.entries());
     console.log(values);
     setIsLoading(true);
