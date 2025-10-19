@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Company Website",
-  description: "Professional company website built with Next.js App Router",
+  title: "REX EIGHT IT",
+  description: "Data Analytics & Application Development",
 };
 
 export default async function RootLayout({
