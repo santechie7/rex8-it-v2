@@ -67,7 +67,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ services }) => (
       <div key={service.id} id={service.id} className={servicesSection.serviceDetail}>
         {/* Header */}
         <div className={servicesSection.header}>
-          <div className={servicesSection.number}>{service.number}</div>
+          {/* <div className={servicesSection.number}>{service.number}</div> */}
           <h2 className={servicesSection.title}>{service.title}</h2>
           <p className={servicesSection.tagline}>{service.tagline}</p>
           <p className={servicesSection.description}>{service.description}</p>

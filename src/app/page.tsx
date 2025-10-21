@@ -31,7 +31,7 @@ export default async function HomePage() {
    IMAGE: PROBLEMIMAGE,
     heading: "Just to avoid doing it?",
     paragraphs: [
-      "Running a business faces similar hurdles. Sure, it's not calculus anymore but it's tedious for you all the same.",
+      "Running a business comes with its fair share of roadblocks. It may not be calculus, but it sure feels just as draining sometimes. That’s where we step in — handling the chaos when life gets in the way.",
       "<strong>That's where we come in –</strong> to tackle those challenges when the dog eats your best intentions.",
      
       "We specialize in solving problems by streamlining operations, automating workflows, and providing data-driven insights. We ensure seamless integration with your existing systems, maximizing efficiency and productivity.",
@@ -44,7 +44,7 @@ export default async function HomePage() {
       "From data engineering to AI automation, we provide end-to-end solutions that transform how your business operates and makes decisions.",
     services: [
       {
-        number: "Service 01",
+        // number: "Service 01",
         title: "Data Engineering & Integration",
         tagline: "Unify your data, unlock your business intelligence.",
         description:
@@ -58,7 +58,7 @@ export default async function HomePage() {
         ],
       },
       {
-        number: "Service 02",
+        // number: "Service 02",
         title: "Business Intelligence & Analytics",
         tagline: "From numbers to narratives.",
         description:
@@ -70,7 +70,7 @@ export default async function HomePage() {
         ],
       },
       {
-        number: "Service 03",
+        // number: "Service 03",
         title: "Application Development & Automation",
         tagline: "Simplify operations. Accelerate innovation.",
         description:
@@ -82,7 +82,7 @@ export default async function HomePage() {
         ],
       },
       {
-        number: "Service 04",
+        // number: "Service 04",
         title: "AI Agents & Intelligent Automation",
         tagline: "Bring intelligence to everyday business.",
         description:
@@ -100,7 +100,7 @@ export default async function HomePage() {
         ],
       },
       {
-        number: "Service 05",
+        // number: "Service 05",
         title: "Cloud Migration & Modernization",
         tagline: "Move with confidence. Scale without limits.",
         description:
@@ -114,7 +114,7 @@ export default async function HomePage() {
         ],
       },
       {
-        number: "What We Offer",
+        // number: "What We Offer",
         title: "Complete Support",
         tagline: "End-to-end partnership.",
         description:
