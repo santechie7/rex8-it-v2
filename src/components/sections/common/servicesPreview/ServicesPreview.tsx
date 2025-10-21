@@ -5,7 +5,7 @@ interface ServiceBenefit {
 }
 
 interface Service {
-  number: string;
+  number?: string;
   title: string;
   tagline: string;
   description: string;
@@ -55,12 +55,12 @@ const ServicesPreview: React.FC<ServicesPreviewProps> = ({
           {/* ::before bar */}
           <span className={servicesPreview.serviceCardBefore}></span>
 
-          <div className={servicesPreview.serviceNumber}>{service.number}</div>
-          <h3 className={servicesPreview.serviceTitle}>{service.title}</h3>
-          <p className={servicesPreview.serviceTagline}>{service.tagline}</p>
-          <p className={servicesPreview.serviceDescription}>{service.description}</p>
+          {/* <div className={servicesPreview.serviceNumber}>{service?.number}</div> */}
+          <h3 className={servicesPreview.serviceTitle}>{service?.title}</h3>
+          <p className={servicesPreview.serviceTagline}>{service?.tagline}</p>
+          <p className={servicesPreview.serviceDescription}>{service?.description}</p>
           <div className={servicesPreview.serviceBenefits}>
-            {service.benefits.map((benefit, i) => (
+            {service && service?.benefits.map((benefit, i) => (
               <div key={i} className={servicesPreview.benefitItem}>
                 {benefit.text}
               </div>

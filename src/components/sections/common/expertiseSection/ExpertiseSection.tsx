@@ -39,7 +39,7 @@ const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({
       <div className={expertiseSection.grid}>
         {expertiseItems.map((item, idx) => (
           <div key={idx} className={expertiseSection.card}>
-            <div className={expertiseSection.number}>{item.number}</div>
+            {/* <div className={expertiseSection.number}>{item.number}</div> */}
             <h3 className={expertiseSection.cardTitle}>{item.title}</h3>
             <p className={expertiseSection.cardDescription}>{item.description}</p>
           </div>

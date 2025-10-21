@@ -14,34 +14,35 @@ export const footerData = {
   },
 
   sections: [
-    {
-      title: "Services",
-      links: [
-        { label: "Data Engineering", href: "#services" },
-        { label: "Business Intelligence", href: "#services" },
-        { label: "App Development", href: "#services" },
-        { label: "AI Automation", href: "#services" },
-        { label: "Cloud Migration", href: "#services" },
-      ],
-    },
+    // {
+    //   title: "Services",
+    //   links: [
+    //     { label: "Data Engineering", href: "#services" },
+    //     { label: "Business Intelligence", href: "#services" },
+    //     { label: "App Development", href: "#services" },
+    //     { label: "AI Automation", href: "#services" },
+    //     { label: "Cloud Migration", href: "#services" },
+    //   ],
+    // },
     {
       title: "Company",
       links: [
         { label: "About Us", href: "/about" },
         { label: "Contact", href: "/contact" },
         { label: "Services", href: "/services" },
-        { label: "Case Studies", href: "#showcase" },
-        { label: "Careers", href: "#" },
+        { label: "Contact", href: "/contact" },
+        // { label: "Case Studies", href: "#showcase" },
+        // { label: "Careers", href: "#" },
       ],
     },
-    {
-      title: "Resources",
-      links: [
-        { label: "Blog", href: "#" },
-        { label: "Documentation", href: "#" },
-        { label: "Support", href: "#" },
-      ],
-    },
+    // {
+    //   title: "Resources",
+    //   links: [
+    //     { label: "Blog", href: "#" },
+    //     { label: "Documentation", href: "#" },
+    //     { label: "Support", href: "#" },
+    //   ],
+    // },
   ],
 
   footerBottom:
@@ -51,7 +52,7 @@ export const footerData = {
 
 const footerStyles = {
   section: "bg-primary text-white py-16 px-[4%]",
-  container: "container mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-16 mb-12",
+  container: "container mx-auto  grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-16 mb-12",
   brandHeading: "text-[1.6rem] font-semibold mb-4",
   brandDescription: "text-white/70 leading-[1.7] mb-6",
   brandBadge: "bg-[#c9a36a1a] px-4 py-2 rounded-[6px] border border-[#c9a36a4d] text-[0.85rem]",
@@ -74,6 +75,7 @@ const Footer: React.FC = () => (
       </div>
 
       {/* Footer Link Sections */}
+      <>
       {footerData.sections.map((section, idx) => (
         <div key={idx}>
           <h4 className={footerStyles.linksHeading}>{section.title}</h4>
@@ -88,6 +90,7 @@ const Footer: React.FC = () => (
           </ul>
         </div>
       ))}
+      </>
     </div>
 
     {/* Footer Bottom Text */}
