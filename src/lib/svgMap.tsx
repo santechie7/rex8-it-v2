@@ -1,4 +1,4 @@
-export const svgMap: Record<string, any> = {
+export const svgMap: Record<string, React.ReactNode> = {
   EXECUTIVE_DASHBOARD: (
          <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
             <rect width="300" height="250" fill="#2d3e50" />
