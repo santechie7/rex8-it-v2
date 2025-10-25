@@ -6,7 +6,7 @@ interface HeroCta {
 }
 
 interface HeroDetails {
-  IMAGE: string | { src: string };
+  imageKey: string | { src: string };
   heading?: string;
   highlight?: string;
   subtitle?: string;
@@ -35,7 +35,7 @@ const heroClasses = {
 };
 
 const HeroSection: React.FC<HeroDetails> = ({
-  IMAGE,
+  imageKey,
   heading = "Transform your business with expert Power Platform consulting",
   highlight = "expert Power Platform",
   subtitle = "We are the experts, so you don't have to be!",
@@ -76,14 +76,15 @@ const HeroSection: React.FC<HeroDetails> = ({
             className="w-full max-w-[550px] h-auto rounded-[20px] border-8 border-white shadow-[0_20px_60px_rgba(0,0,0,0.15)] animate-floatImage"
             viewBox="0 0 500 500"
           >
-            <image
-              href={typeof IMAGE === "string" ? IMAGE : IMAGE.src}
-              x="0"
-              y="0"
-              width="500"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-            />
+            {imageKey && (
+              <image
+                href={typeof imageKey === "string" ? imageKey : imageKey.src}
+                x="0"
+                y="0"
+                width="500"
+                height="500"
+              />
+            )}
           </svg>
         </div>
       </div>

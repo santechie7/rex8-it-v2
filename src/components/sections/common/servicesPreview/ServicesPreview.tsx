@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface ServiceBenefit {
@@ -5,6 +6,7 @@ interface ServiceBenefit {
 }
 
 interface Service {
+  id?:string
   number?: string;
   title: string;
   tagline: string;
@@ -43,6 +45,7 @@ const ServicesPreview: React.FC<ServicesPreviewProps> = ({
   services,
 }) => (
   <section className={servicesPreview.servicesSection} id="services">
+   
     <div className={servicesPreview.sectionHeader}>
       <div className={servicesPreview.sectionLabel}>{headerLabel}</div>
       <h2 className={servicesPreview.sectionTitle}>{headerTitle}</h2>
@@ -51,7 +54,11 @@ const ServicesPreview: React.FC<ServicesPreviewProps> = ({
 
     <div className={servicesPreview.servicesGrid}>
       {services?.map((service, idx) => (
-        <div key={idx} className={servicesPreview.serviceCard}>
+         <Link
+              key={service.id}
+              href={`/services?id=${service.id}`}
+            >
+              <div key={idx} className={servicesPreview.serviceCard}>
           {/* ::before bar */}
           <span className={servicesPreview.serviceCardBefore}></span>
 
@@ -67,6 +74,8 @@ const ServicesPreview: React.FC<ServicesPreviewProps> = ({
             ))}
           </div>
         </div>
+            </Link>
+        
       ))}
     </div>
   </section>

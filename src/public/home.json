@@ -1,0 +1,189 @@
+{
+  "heroData": {
+    "imageKey": "HEROIMAGE",
+    "heading": "Transform your business with expert Power Platform consulting",
+    "highlight": "expert Power Platform",
+    "subtitle": "We are the experts, so you don't have to be!",
+    "description": "Big companies offer oversimplified \"low-code\" solutions for small to medium-sized businesses. You and I know it's not that straightforward. Creating reliable, actionable dashboards, apps, and automated processes requires expertise, even with \"low-code\" tools.",
+    "primaryCta": {
+      "text": "Schedule Consultation",
+      "href": "/contact"
+    },
+    "secondaryCta": {
+      "text": "Explore Services",
+      "href": "/services"
+    }
+  },
+  "banner": {
+    "headline": "\"Remember when someone claimed the dog ate their homework?\"",
+    "content": "Running a business faces similar hurdles. Sure, it's not calculus anymore but it's tedious for you all the same. That's where we come in – to tackle those challenges when the dog eats your best intentions."
+  },
+  "problem": {
+    "imageKey": "PROBLEMIMAGE",
+    "heading": "Just to avoid doing it?",
+    "paragraphs": [
+      "Running a business comes with its fair share of roadblocks. It may not be calculus, but it sure feels just as draining sometimes. That's where we step in — handling the chaos when life gets in the way.",
+      "<strong>That's where we come in –</strong> to tackle those challenges when the dog eats your best intentions.",
+      "We specialize in solving problems by streamlining operations, automating workflows, and providing data-driven insights. We ensure seamless integration with your existing systems, maximizing efficiency and productivity."
+    ]
+  },
+  "services": {
+    "headerLabel": "How can I help your business?",
+    "headerTitle": "Comprehensive Power Platform Solutions",
+    "headerDescription": "From data engineering to AI automation, we provide end-to-end solutions that transform how your business operates and makes decisions.",
+    "services": [
+      {
+         "id": "data-engineering",
+        "title": "Data Engineering & Integration",
+        "tagline": "Unify your data, unlock your business intelligence.",
+        "description": "We build strong data foundations that connect cloud, on-premise, and application data into a single, reliable source of truth.",
+        "benefits": [
+          {
+            "text": "End data silos with seamless system integration"
+          },
+          {
+            "text": "Achieve faster reporting through automated data pipelines"
+          },
+          {
+            "text": "Gain data quality, consistency, and governance across platforms"
+          }
+        ]
+      },
+      {
+        "id": "business-intelligence",
+        "title": "Business Intelligence & Analytics",
+        "tagline": "From numbers to narratives.",
+        "description": "We transform raw data into visual stories that empower smarter decisions through dashboards, KPI monitoring, and automated insights.",
+        "benefits": [
+          {
+            "text": "See business performance in real time"
+          },
+          {
+            "text": "Empower teams with self-service dashboards"
+          },
+          {
+            "text": "Turn complex analytics into clear, actionable insights"
+          }
+        ]
+      },
+      {
+         "id": "app-development",
+        "title": "Application Development & Automation",
+        "tagline": "Simplify operations. Accelerate innovation.",
+        "description": "We design low-code apps and workflow automations that replace manual tasks with intuitive digital experiences — all built for scalability.",
+        "benefits": [
+          {
+            "text": "Reduce manual effort and process bottlenecks"
+          },
+          {
+            "text": "Deliver internal tools and portals in days, not months"
+          },
+          {
+            "text": "Integrate data and workflows seamlessly across systems"
+          }
+        ]
+      },
+      {
+        "id": "ai-automation",
+        "title": "AI Agents & Intelligent Automation",
+        "tagline": "Bring intelligence to everyday business.",
+        "description": "We deploy custom AI agents that learn from your data, automate decisions, and assist teams through natural conversation.",
+        "benefits": [
+          {
+            "text": "Build virtual assistants for analytics, CRM, and operations"
+          },
+          {
+            "text": "Automate reporting, forecasting, and customer interactions"
+          },
+          {
+            "text": "Create personalized business copilots powered by your data"
+          }
+        ]
+      },
+      {
+        "id": "cloud-migration",
+        "title": "Cloud Migration & Modernization",
+        "tagline": "Move with confidence. Scale without limits.",
+        "description": "We help organizations migrate, optimize, and modernize their infrastructure across AWS, Azure, and Oracle Cloud.",
+        "benefits": [
+          {
+            "text": "Migrate legacy systems with minimal downtime"
+          },
+          {
+            "text": "Modernize data architecture for scalability and speed"
+          },
+          {
+            "text": "Adopt a multi-cloud strategy for flexibility and resilience"
+          }
+        ]
+      }
+    ]
+  },
+  "showcaseData": {
+    "headerLabel": "Our Work",
+    "headerTitle": "Real Solutions for Real Businesses",
+    "headerDescription": "We deliver actionable insights through beautiful, functional dashboards and automated workflows that drive results.",
+    "items": [
+      {
+        "caption": "Executive Dashboards",
+        "svgKey": "EXECUTIVE_DASHBOARD"
+      },
+      {
+        "caption": "Health Analytics",
+        "svgKey": "HEALTH_ANALYTICS"
+      },
+      {
+        "caption": "Sales Analytics",
+        "svgKey": "SALES_ANALYTICS"
+      },
+      {
+        "caption": "Custom Apps",
+        "svgKey": "CUSTOM_APPS"
+      }
+    ]
+  },
+  "whyChooseData": {
+    "heading": "Why Choose Rex Eight IT?",
+    "description": "We're not a faceless corporation. We're a dedicated team that understands your unique challenges and brings both technical expertise and personalized service to every engagement.",
+    "features": [
+      {
+        "icon": "🎖️",
+        "title": "Veteran & Woman Owned",
+        "description": "Discipline, integrity, and diverse perspectives in every project"
+      },
+      {
+        "icon": "🎓",
+        "title": "Microsoft Certified",
+        "description": "Advanced certifications in Power Platform and Azure services"
+      },
+      {
+        "icon": "⚡",
+        "title": "Rapid Delivery",
+        "description": "Solutions in days, not months, with our low-code expertise"
+      },
+      {
+        "icon": "🤝",
+        "title": "True Partnership",
+        "description": "Direct access to our expert team who understand your business"
+      }
+    ]
+  },
+  "ownerBadge": {
+    "companyName": "REX EIGHT L.L.C.",
+    "description": "Certified Veteran & Woman Owned Business | Empowering Small to Medium Businesses"
+  },
+  "cta": {
+    "heading": "Ready to Transform Your Data Into Action?",
+    "description": "Let's discuss how we can help you unlock the full potential of your business data with Microsoft Power Platform solutions. Schedule a free consultation today.",
+    "primaryCtaText": "Schedule Free Consultation",
+    "primaryCtaHref": "/contact",
+    "secondaryCtaText": "View All Services",
+    "secondaryCtaHref": "/services"
+  }
+}
+
+
+
+
+
+      
