@@ -126,19 +126,19 @@
     "items": [
       {
         "caption": "Executive Dashboards",
-        "svgKey": "EXECUTIVE_DASHBOARD"
+        "svgContent": "EXECUTIVE_DASHBOARD"
       },
       {
         "caption": "Health Analytics",
-        "svgKey": "HEALTH_ANALYTICS"
+        "svgContent": "HEALTH_ANALYTICS"
       },
       {
         "caption": "Sales Analytics",
-        "svgKey": "SALES_ANALYTICS"
+        "svgContent": "SALES_ANALYTICS"
       },
       {
         "caption": "Custom Apps",
-        "svgKey": "CUSTOM_APPS"
+        "svgContent": "CUSTOM_APPS"
       }
     ]
   },

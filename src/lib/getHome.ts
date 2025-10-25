@@ -39,7 +39,7 @@ export async function getHome() {
   if (data.showcaseData?.items) {
     data.showcaseData.items = data.showcaseData.items.map((item: any) => ({
       ...item,
-      svgContent: item.svgKey ? svgMap[item.svgKey] : null,
+      svgContent: item.svgContent ? svgMap[item.svgContent] : null,
     }));
   }
 
