@@ -144,6 +144,9 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
             //     ? servicesSection.serviceDetailHighlighted 
             //     : servicesSection.serviceDetail
             // }
+            className={
+                 servicesSection.serviceDetail
+            }
           >
             {/* Header */}
             <div className={servicesSection.header}>

@@ -47,8 +47,9 @@ export const footerData = {
 
   footerBottom:
     "© 2025 Rex Eight L.L.C. All rights reserved. | Privacy Policy | Terms of Service",
+  
+  version: "v1.0.0", // Add version here
 };
-
 
 const footerStyles = {
   section: "bg-primary text-white py-16 px-[4%]",
@@ -59,7 +60,9 @@ const footerStyles = {
   linksHeading: "text-[1rem] font-semibold text-secondary mb-6",
   link: "text-white/70 hover:text-white transition-colors text-[0.95rem]",
   linkItem: "mb-2",
-  bottom: "container mx-auto pt-8 border-t border-white/10 text-center text-white/60 text-[0.9rem]",
+  bottom: "container mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-white/60 text-[0.9rem]",
+  bottomText: "text-center md:text-left",
+  version: "text-white/40 text-[0.85rem]",
 };
 
 const Footer: React.FC = () => (
@@ -93,8 +96,11 @@ const Footer: React.FC = () => (
       </>
     </div>
 
-    {/* Footer Bottom Text */}
-    <div className={footerStyles.bottom}>{footerData.footerBottom}</div>
+    {/* Footer Bottom Text with Version */}
+    <div className={footerStyles.bottom}>
+      <div className={footerStyles.bottomText}>{footerData.footerBottom}</div>
+      <div className={footerStyles.version}>{footerData.version}</div>
+    </div>
   </footer>
 );
 
